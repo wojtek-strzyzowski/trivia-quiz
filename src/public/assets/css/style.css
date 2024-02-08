@@ -210,7 +210,9 @@ h1,h2,p, .glow-element {
         /* justify-content: space-around; */
         flex-direction: column;
     }
-
+    #timer {
+        font-size: 25px;
+    }
     .glow-element {
         font-size: 30px;
     }
@@ -300,6 +302,9 @@ h1, h2 {
 p {
     font-size: 18px;
 }
+
+#timer {
+    font-size: 15px;
 .form-select {
     width: 95%;
     font-size: 20px;
@@ -358,5 +363,7 @@ select {
 .btn {
     font-size: 15px;
 }
-
+#timer {
+    font-size: 15px;
 }
+}}

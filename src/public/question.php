@@ -20,12 +20,16 @@
 ?>
 
 <div class="container-fluid">
- 
+
     <div class="row-10 glow-element">
         <div class="col-9">
         <h1>Frage <?php echo ($currentQuestionIndex + 1);?> von <?php echo $quiz ["questionNum"]; ?> </h1>
         
         <h2><?php echo $question["question_text"]; ?></h2>
+        </div>
+         <!-- Timer-Element hier oben rechts -->
+         <div class="col-3" style="text-align: right;">
+            <div id="timer" style=" font-weight: bold; color: white; z-index: 1;"></div>
         </div>
     </div>
 
@@ -79,6 +83,8 @@
     }
 }
    ?>
+
+
             <input type="hidden" name="questionNum" value="<?php $quiz["questionNum"];?>">
             <input type="hidden" name="lastQuestionIndex" name="lastQuestionIndex" value="<?php echo $currentQuestionIndex;?>">
             <input type="hidden" name="multipleChoice" name="multipleChoice" value="<?php echo $multipleChoice ? 'true' : 'false'; ?>">
@@ -93,5 +99,6 @@
     
 </form>
 </div>
+<script src="./assets/js/main.js"></script>
 </body>
 </html>
